@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>module Ex25 - RDoc Documentation</title>
+
+<link href="./fonts.css" rel="stylesheet">
+<link href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/navigation.js"></script>
+<script src="./js/search_index.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/searcher.js"></script>
+<script src="./js/darkfish.js"></script>
+
+
+<body id="top" role="document" class="module">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-break_words">::break_words</a>
+    
+    <li ><a href="#method-c-print_first_and_last">::print_first_and_last</a>
+    
+    <li ><a href="#method-c-print_first_and_last_sorted">::print_first_and_last_sorted</a>
+    
+    <li ><a href="#method-c-print_first_word">::print_first_word</a>
+    
+    <li ><a href="#method-c-print_last_word">::print_last_word</a>
+    
+    <li ><a href="#method-c-puts_first_and_last">::puts_first_and_last</a>
+    
+    <li ><a href="#method-c-puts_first_and_last_sorted">::puts_first_and_last_sorted</a>
+    
+    <li ><a href="#method-c-puts_first_word">::puts_first_word</a>
+    
+    <li ><a href="#method-c-puts_last_word">::puts_last_word</a>
+    
+    <li ><a href="#method-c-sort_sentence">::sort_sentence</a>
+    
+    <li ><a href="#method-c-sort_words">::sort_words</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="module-Ex25">
+  <h1 id="module-Ex25" class="module">
+    module Ex25
+  </h1>
+
+  <section class="description">
+    <ul><li>
+<p>More function fun :)</p>
+</li><li>
+<p>Jonathan Cameron</p>
+</li></ul>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-break_words" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">break_words</span><span
+            class="method-args">(stuff)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="break_words-source">
+            <pre><span class="ruby-comment"># File ex25FunctionPrac.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">break_words</span>(<span class="ruby-identifier">stuff</span>)
+        <span class="ruby-comment"># This function will break up words for us.</span>
+        <span class="ruby-identifier">words</span> = <span class="ruby-identifier">stuff</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&#39; &#39;</span>)
+        <span class="ruby-identifier">words</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-print_first_and_last" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">print_first_and_last</span><span
+            class="method-args">(sentence)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="print_first_and_last-source">
+            <pre><span class="ruby-comment"># File ex25FunctionPrac.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">print_first_and_last</span>(<span class="ruby-identifier">sentence</span>)
+        <span class="ruby-comment"># Prints the first and last words of the sentence.</span>
+        <span class="ruby-identifier">words</span> = <span class="ruby-identifier">break_words</span>(<span class="ruby-identifier">sentence</span>)
+        <span class="ruby-identifier">print_first_word</span>(<span class="ruby-identifier">words</span>)
+        <span class="ruby-identifier">print_last_word</span>(<span class="ruby-identifier">words</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-print_first_and_last_sorted" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">print_first_and_last_sorted</span><span
+            class="method-args">(sentence)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="print_first_and_last_sorted-source">
+            <pre><span class="ruby-comment"># File ex25FunctionPrac.rb, line 41</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">print_first_and_last_sorted</span>(<span class="ruby-identifier">sentence</span>)
+        <span class="ruby-comment"># Sorts the words then prints the first and last one sorted</span>
+        <span class="ruby-identifier">words</span> = <span class="ruby-identifier">sort_sentence</span>(<span class="ruby-identifier">sentence</span>)
+        <span class="ruby-identifier">print_first_word</span>(<span class="ruby-identifier">words</span>)
+        <span class="ruby-identifier">print_last_word</span>(<span class="ruby-identifier">words</span>) 
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-print_first_word" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">print_first_word</span><span
+            class="method-args">(words)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="print_first_word-source">
+            <pre><span class="ruby-comment"># File ex25FunctionPrac.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">print_first_word</span>(<span class="ruby-identifier">words</span>)
+        <span class="ruby-comment"># Prints the first word and shifts the others down by one.</span>
+        <span class="ruby-identifier">word</span> = <span class="ruby-identifier">words</span>.<span class="ruby-identifier">shift</span>()
+        <span class="ruby-identifier">puts</span> <span class="ruby-identifier">word</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-print_last_word" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">print_last_word</span><span
+            class="method-args">(words)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="print_last_word-source">
+            <pre><span class="ruby-comment"># File ex25FunctionPrac.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">print_last_word</span>(<span class="ruby-identifier">words</span>)
+        <span class="ruby-comment"># Prints the last word after popping it off the end.</span>
+        <span class="ruby-identifier">word</span> = <span class="ruby-identifier">words</span>.<span class="ruby-identifier">pop</span>()
+        <span class="ruby-identifier">puts</span> <span class="ruby-identifier">word</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-puts_first_and_last" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">puts_first_and_last</span><span
+            class="method-args">(sentence)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Puts the first and last words of the sentence.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="puts_first_and_last-source">
+            <pre><span class="ruby-comment"># File ex26testSkill.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">puts_first_and_last</span>(<span class="ruby-identifier">sentence</span>)
+    <span class="ruby-identifier">words</span> = <span class="ruby-identifier">break_words</span>(<span class="ruby-identifier">sentence</span>)
+    <span class="ruby-identifier">puts_first_word</span>(<span class="ruby-identifier">words</span>)
+    <span class="ruby-identifier">puts_last_word</span>(<span class="ruby-identifier">words</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-puts_first_and_last_sorted" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">puts_first_and_last_sorted</span><span
+            class="method-args">(sentence)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Sorts the words then prints the first and last one.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="puts_first_and_last_sorted-source">
+            <pre><span class="ruby-comment"># File ex26testSkill.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">puts_first_and_last_sorted</span>(<span class="ruby-identifier">sentence</span>)
+    <span class="ruby-identifier">words</span> = <span class="ruby-identifier">sort_sentence</span>(<span class="ruby-identifier">sentence</span>)
+    <span class="ruby-comment"># puts_first_word(words)    # undefined &#39;shift&#39; though &#39;shift is used &#39;</span>
+    <span class="ruby-comment"># puts_last_word(words)</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-puts_first_word" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">puts_first_word</span><span
+            class="method-args">(words)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Prints the first word after popping it off.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="puts_first_word-source">
+            <pre><span class="ruby-comment"># File ex26testSkill.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">puts_first_word</span>(<span class="ruby-identifier">words</span>)
+    <span class="ruby-identifier">word</span> = <span class="ruby-identifier">words</span>.<span class="ruby-identifier">shift</span>()
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">word</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-puts_last_word" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">puts_last_word</span><span
+            class="method-args">(words)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Prints the last word after popping it off.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="puts_last_word-source">
+            <pre><span class="ruby-comment"># File ex26testSkill.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">puts_last_word</span>(<span class="ruby-identifier">words</span>)
+    <span class="ruby-identifier">words</span>.<span class="ruby-identifier">pop</span>()
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-sort_sentence" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">sort_sentence</span><span
+            class="method-args">(sentence)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="sort_sentence-source">
+            <pre><span class="ruby-comment"># File ex25FunctionPrac.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">sort_sentence</span>(<span class="ruby-identifier">sentence</span>)
+        <span class="ruby-comment"># Takes in a full sentence and returns the sorted words.</span>
+        <span class="ruby-identifier">words</span> = <span class="ruby-identifier">break_words</span>(<span class="ruby-identifier">sentence</span>)
+        <span class="ruby-identifier">sort_words</span>(<span class="ruby-identifier">words</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-sort_words" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">sort_words</span><span
+            class="method-args">(words)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="sort_words-source">
+            <pre><span class="ruby-comment"># File ex25FunctionPrac.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">sort_words</span>(<span class="ruby-identifier">words</span>)
+        <span class="ruby-comment"># sorts the words</span>
+        <span class="ruby-identifier">words</span>.<span class="ruby-identifier">sort</span>()
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://rdoc.rubyforge.org">RDoc</a> 4.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

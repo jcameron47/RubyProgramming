@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Game - RDoc Documentation</title>
+
+<link href="./fonts.css" rel="stylesheet">
+<link href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/navigation.js"></script>
+<script src="./js/search_index.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/searcher.js"></script>
+<script src="./js/darkfish.js"></script>
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-central_corridor">#central_corridor</a>
+    
+    <li ><a href="#method-i-death">#death</a>
+    
+    <li ><a href="#method-i-escape_pod">#escape_pod</a>
+    
+    <li ><a href="#method-i-laser_weapon_armory">#laser_weapon_armory</a>
+    
+    <li ><a href="#method-i-play">#play</a>
+    
+    <li ><a href="#method-i-prompt">#prompt</a>
+    
+    <li ><a href="#method-i-the_bridge">#the_bridge</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Game">
+  <h1 id="class-Game" class="class">
+    class Game
+  </h1>
+
+  <section class="description">
+    
+<p>create the class <a href="Game.html">Game</a></p>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(start)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>initialize the class while passing an argument through(start)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File ex43gameClass.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">start</span>)
+        <span class="ruby-ivar">@quips</span> = [
+                <span class="ruby-string">&quot;You died.  You kinda suck at this.&quot;</span>,
+                <span class="ruby-string">&quot;Nice job, you died  ...jackass,&quot;</span>,
+                <span class="ruby-string">&quot;Such a loooozer.&quot;</span>,
+                <span class="ruby-string">&quot;I have a stick that&#39;s better at this.&quot;</span>
+        ]
+
+        <span class="ruby-comment"># store the argument passed </span>
+        <span class="ruby-ivar">@start</span> = <span class="ruby-identifier">start</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-central_corridor" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">central_corridor</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>central corridor room</p>
+          
+          
+
+          
+          <div class="method-source-code" id="central_corridor-source">
+            <pre><span class="ruby-comment"># File ex43gameClass.rb, line 48</span>
+    <span class="ruby-keyword">def</span> <span class="ruby-identifier">central_corridor</span>()
+            <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;The Gothons of Planet Percal #25 have invaded your ship and destroyed&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;your entire crew.  You are the last surviving member and your last&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;mission is to get the neutron destruct bomb from the Weapons Armory,&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;put it in the bridge, and blow the ship up after getting into an &quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;escape pod.&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;\n&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You&#39;re running down the central corridor to the Weapons Armory when&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;a Gothon jumps out, red scaly skin, dark grimy teeth, and evil clown costume&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;flowing around his hate filled body.  He&#39;s blocking the door to the&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Armory and about to pull a weapon to blast you.&quot;</span>
+
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The following typed actions are available:&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;1. shoot!&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;2. dodge!&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;3. tell a joke&quot;</span>
+
+<span class="ruby-identifier">prompt</span>()
+<span class="ruby-identifier">action</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>()
+
+
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">action</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;shoot!&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Quick on the draw you yank out your blaster and fire it at the Gothon.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;His clown costume is flowing and moving around his body, which throws&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;off your aim.  Your laser hits his costume but misses him entirely.  This&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;completely ruins his brand new costume his mother bought him, which&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;makes him fly into an insane rage and blast you repeatedly in the face until&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;you are dead.  Then he eats you.&quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-value">:death</span>
+
+<span class="ruby-keyword">elsif</span> <span class="ruby-identifier">action</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;dodge!&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Like a world class boxer you dodge, weave, slip and slide right&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;as the Gothon&#39;s blaster cranks a laser past your head.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;In the middle of your artful dodge your foot slips and you&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;bang your head on the metal wall and pass out.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You wake up shortly after only to die as the Gothon stomps on&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;your head and eats you.&quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-value">:death</span>
+
+<span class="ruby-keyword">elsif</span> <span class="ruby-identifier">action</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;tell a joke&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Lucky for you they made you learn Gothon insults in the academy.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You tell the one Gothon joke you know:&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Lbhe zbgure vf fb sng, jura fur fvgf nebhaq gur ubhfr, fur fvgf nebhaq gur ubhfr.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The Gothon stops, tries not to laugh, then busts out laughing and can&#39;t move.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;While he&#39;s laughing you run up and shoot him square in the head&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;putting him down, then jump through the Weapon Armory door.&quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-value">:laser_weapon_armory</span>
+
+<span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;DOES NOT COMPUTE!&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-value">:central_corridor</span>   <span class="ruby-comment">#return to the beginning of central_corridor</span>
+            <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-death" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">death</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="death-source">
+            <pre><span class="ruby-comment"># File ex43gameClass.rb, line 42</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">death</span>()
+        <span class="ruby-identifier">puts</span> <span class="ruby-ivar">@quips</span>[<span class="ruby-identifier">rand</span>(<span class="ruby-ivar">@quips</span>.<span class="ruby-identifier">length</span>())]
+        <span class="ruby-constant">Process</span>.<span class="ruby-identifier">exit</span>(<span class="ruby-value">1</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-escape_pod" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">escape_pod</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="escape_pod-source">
+            <pre><span class="ruby-comment"># File ex43gameClass.rb, line 184</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">escape_pod</span>()
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You rush through the ship desperately trying to make it to&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;the escape pod before the whole ship explodes.  It seems like&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;hardly any Gothons are on the ship, so your run is clear of&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;interference.  You get to the chamber with the escape pods, and&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;now need to pick one to take.  Some of them could be damaged&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;but you don&#39;t have time to look.  There&#39;s 5 pods, which one&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;do you take?&quot;</span>
+
+  <span class="ruby-identifier">good_pod</span> = <span class="ruby-identifier">rand</span>(<span class="ruby-value">5</span>)<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Good pod = #{good_pod}&quot;</span>  <span class="ruby-comment"># test the code with answer</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-node">&quot;[pod #]&gt; &quot;</span>
+  <span class="ruby-identifier">guess</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>()
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">guess</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">good_pod</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You jump into pod %s and hit the eject button.&quot;</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">guess</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The pod escapes out into the void of space, then&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;implodes as the hull ruptures, crushing your body&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;into jam jelly.&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-value">:death</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You jump into pod %s and hit the eject button.&quot;</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">guess</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The pod easily slides out into space heading to&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;the planet below.  As it flies to the planet, you look&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;back and see your ship implode then explode like a&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;bright star, taking out the Gothon ship at the same&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;time.  You won!&quot;</span>
+    <span class="ruby-constant">Process</span>.<span class="ruby-identifier">exit</span>(<span class="ruby-value">0</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-laser_weapon_armory" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">laser_weapon_armory</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="laser_weapon_armory-source">
+            <pre><span class="ruby-comment"># File ex43gameClass.rb, line 102</span>
+      <span class="ruby-keyword">def</span> <span class="ruby-identifier">laser_weapon_armory</span>()
+              <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You do a dive roll into the Weapon Armory, crouch and scan the room&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;for more Gothons that might be hiding.  It&#39;s dead quiet, too quiet.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You stand up and run to the far side of the room and find the&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;neutron bomb in its container.  There&#39;s a keypad lock on the box&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;and you need the code to get the bomb out.  If you get the code&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;wrong 10 times then the lock closes forever and you can&#39;t&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;get the bomb.  The code is 3 digits.&quot;</span>
+  <span class="ruby-identifier">code</span> = <span class="ruby-string">&quot;%s%s%s&quot;</span> <span class="ruby-operator">%</span> [<span class="ruby-identifier">rand</span>(<span class="ruby-value">9</span>)<span class="ruby-operator">+</span><span class="ruby-value">1</span>, <span class="ruby-identifier">rand</span>(<span class="ruby-value">9</span>)<span class="ruby-operator">+</span><span class="ruby-value">1</span>, <span class="ruby-identifier">rand</span>(<span class="ruby-value">9</span>)<span class="ruby-operator">+</span><span class="ruby-value">1</span>] <span class="ruby-comment"># creates 3 randomn digits</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Test: code - %s&quot;</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">code</span>  <span class="ruby-comment"># test to see if code works</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;[keypad]&gt; &quot;</span>
+  <span class="ruby-identifier">guess</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>()
+  <span class="ruby-identifier">guesses</span> = <span class="ruby-value">0</span>
+
+  <span class="ruby-comment"># allow the user to guess up to 10 times unless correct guess </span>
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">guess</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">code</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">guesses</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">9</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;BZZZZZZEDDDD!&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;That is guess ##{guesses + 1}&quot;</span>
+    <span class="ruby-identifier">guesses</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">guesses</span> <span class="ruby-operator">==</span> <span class="ruby-value">9</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;This is your final chance!&quot;</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;[keypad]&gt; &quot;</span>
+    <span class="ruby-identifier">guess</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>()
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># successful guess</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">guess</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">code</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The container clicks open and the seal breaks, letting gas out.&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You grab the neutron bomb and run as fast as you can to the&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;bridge where you must place it in the right spot.&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-value">:the_bridge</span>
+  <span class="ruby-keyword">else</span> <span class="ruby-comment"># fail - pass death method</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The lock buzzes one last time and then you hear a sickening&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;melting sound as the mechanism is fused together.&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You decide to sit there, and finally the Gothons blow up the&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;ship from their ship and you die.&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-value">:death</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-play" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">play</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="play-source">
+            <pre><span class="ruby-comment"># File ex43gameClass.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">play</span>()
+        <span class="ruby-identifier">next_room</span> = <span class="ruby-ivar">@start</span>
+
+        <span class="ruby-keyword">while</span> <span class="ruby-keyword">true</span>
+                <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;\n--------------&quot;</span>
+                <span class="ruby-identifier">room</span> = <span class="ruby-identifier">method</span>(<span class="ruby-identifier">next_room</span>)
+                <span class="ruby-identifier">next_room</span> = <span class="ruby-identifier">room</span>.<span class="ruby-identifier">call</span>()
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-prompt" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">prompt</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>displays the prompt</p>
+          
+          
+
+          
+          <div class="method-source-code" id="prompt-source">
+            <pre><span class="ruby-comment"># File ex43gameClass.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">prompt</span>()
+        <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;&gt; &quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-the_bridge" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">the_bridge</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="the_bridge-source">
+            <pre><span class="ruby-comment"># File ex43gameClass.rb, line 145</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">the_bridge</span>()
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You burst onto the Bridge with the neutron destruct bomb&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;under your arm and surprise 5 Gothons who are trying to&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;take control of the ship.  Each of them has an even uglier&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;clown costume than the last.  They haven&#39;t pulled their&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;weapons out yet, as they see the active bomb under your&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;arm and don&#39;t want to set it off.&quot;</span>
+
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The following typed actions are available:&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;1. throw the bomb&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;2. slowly place the bomb&quot;</span>
+  <span class="ruby-identifier">prompt</span>()
+  <span class="ruby-identifier">action</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>()
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">action</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;throw the bomb&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;In a panic you throw the bomb at the group of Gothons&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;and make a leap for the door.  Right as you drop it a&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Gothon shoots you right in the back killing you.&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;As you die you see another Gothon frantically try to disarm&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;the bomb. You die knowing they will probably blow up when&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;it goes off.&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-value">:death</span>
+
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">action</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;slowly place the bomb&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You point your blaster at the bomb under your arm&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;and the Gothons put their hands up and start to sweat.&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You inch backward to the door, open it, and then carefully&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;place the bomb on the floor, pointing your blaster at it.&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You then jump back through the door, punch the close button&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;and blast the lock so the Gothons can&#39;t get out.&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Now that the bomb is placed you run to the escape pod to&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;get off this tin can.&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-value">:escape_pod</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;DOES NOT COMPUTE!&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-value">:the_bridge</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://rdoc.rubyforge.org">RDoc</a> 4.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

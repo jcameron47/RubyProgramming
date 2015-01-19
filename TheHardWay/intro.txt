@@ -1,0 +1,31 @@
+4-----------------------------
+---- Jonny's Street Craps ----
+-----------------------------7
+
+Welcome to my Ruby programmed,
+street dice game! The rules are
+straight forward.
+
+You hit the enter key when it tells you to.
+ You will roll your first dice roll.
+
+If you get a:
+
+2, 3, 12 - You lose the game
+
+if you get:
+
+7, 11 - You win
+
+else any other number you get,
+ you will have to roll that number again.
+ you will keep rolling till you get 
+ your number again, or get a 7,
+ in which case, you would lose.
+
+That is the game! Play it a couple
+ of times to practice. If you get
+ how to play this game, you could
+ play the basics in Vegas! 
+            
+             Have fun!

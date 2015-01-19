@@ -1,0 +1,7 @@
+== README
+
+This is a display of my work with Ruby. Free for browsing and 
+distribution.
+
+- Jonathan Cameron
+

@@ -1,0 +1,13 @@
+:largecave
+Large Cave
+a large cavernous cave
+:west :smallcave :south :jungle :north :largecave :east :bedroom
+:smallcave
+Small Cave
+a small cave
+:east :largecave :west :goldroom
+:jungle
+Jungle
+a very green jungle
+:north :largecave :east :myroom
+
