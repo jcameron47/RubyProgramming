@@ -1,35 +1,15 @@
-# Text analyzer 
-# 
-# Program function:
+# Jonathan Cameron
+# Teline_countt Analyzer V1
 
-# Character count
-# Character count (excluding spaces)
-# Word count
-# Sentence count
-# Paragraph count
-# Average number of words per Sentence
-# Average number of sentences per Paragraph
+text = %q{Los Angeles has some of the dookiest weather in the country.}
+stopwords = %w{the a by on for of are with just but and to the my in I has some}
 
-# allows use of open-uri
-require 'open-uri'
+words = text.scan(/\w+/)
+keywords = words.select {|word| !stopwords.include?(word)}
 
-# store the external website url
-WORD_URL = "http://www.rubyinside.com/book/oliver.txt"
-# create an empty array
-z = []
+puts keywords.join(' ')
+puts text.scan(/\w+/).length
+print "Keyword/Word - "
+print ((keywords.length.to_f / words.length.to_f) * 100).to_i
+print "%\n"
 
-# lets load this sucka up! Store the content from the website
-# open website, data x passes through, each data passed through is pushed into WORD array
-# open(WORD_URL) {|x|
-# 	x.each_line {|word| z.push(word.chomp)}
-# }
-
-open(WORD_URL) {|x|
-	z.push(x)
-}
-
-puts z
-
-x = z.split(" ")
-
-puts "Words = #{x.length}"

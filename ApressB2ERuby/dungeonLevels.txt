@@ -1,0 +1,63 @@
+smallcave
+Small Cave 
+cramped little cave, with just enough room for a child to fit into...
+north rivereast
+south largecave
+east deadend
+west bunghole
+
+largecave
+Large Cave
+Echos bounce off the distant walls of this deep, dark cave
+north smallcave
+south deadend
+east deadend
+west forest
+
+bunghole
+Bung Hole
+very terrible place, very terrible... please leave... now!
+north riverwest
+south forest
+east smallcave
+west mountain
+
+forest
+Forest
+Shady view of the world within these trees. Very surreal. 
+north bunghole
+south deadend
+east largecave
+west deadend
+
+riverwest
+West River
+Western part of the river. The flow gains major strength down the way. Mild depth/current.
+north deadend
+south bunghole
+east rivereast
+west deadend
+
+rivereast
+East River
+eastern part of the river. The flow goes to the west. Little depth/current.
+north deadend
+south smallcave
+east deadend
+west riverwest
+
+mountain
+Mountain
+you can see across the whole earth from these heights. Thin air/Freezing conditions.
+north deadend 
+south deadend
+east bunghole
+west home
+
+home
+Home
+you sit on your couch. You're home. The most relaxing place on this planet. 
+north deadend 
+south deadend
+east mountain
+west deadend
